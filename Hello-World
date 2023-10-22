@@ -1,0 +1,7 @@
+import mwcleric
+
+site = mwcleric.Site('localhost/mediawiki', path='/api.php')
+
+site.login('AgentClyde@ClydeBot', 'RedactedBotPassword')
+
+site.pages['hello'].save('world')
